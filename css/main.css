@@ -7,6 +7,7 @@
 
 * {
     font-family: 'Lato', sans-serif;
+    font-size: 17px;
 }
 
 body, article, header {
@@ -29,12 +30,6 @@ h3 {
 
 img {
 	max-width: 100%;
-}
-
-hr {
-	border: 1px solid #7d97ad;
-	width: 100%;
-	margin-top: 0px;
 }
 
 /*Header*/
@@ -71,11 +66,29 @@ header {
 	font-size: 1em;
 }
 
+hr {
+	border: 1px solid #7d97ad;
+	width: 100%;
+	margin-top: 0px;
+}
+
 /*Body*/
 
 .img_large {
 	width: 100%;
 	margin-top: 5px;
+}
+
+.body_text_heading {
+	padding-bottom: 5px;
+}
+
+.body_text_box {
+	margin-top: 5px;
+}
+
+.body_text {
+	text-align: left;
 }
 
 h3 {
@@ -86,7 +99,6 @@ h3 {
 
 .app {
 	width: 100%;
-	display: cover;
 	margin-top: 10px;
 }
 
@@ -107,10 +119,6 @@ p {
 	color: #2d3c49;
 }
 
-a {
-	min-width: 86px;
-}
-
 /*Responsive*/
 
 @media screen and (min-width: 800px) {
@@ -119,8 +127,15 @@ a {
 		width: calc((100% - 20px)/3);
 		margin-right: 10px;
 	}
+
 	.app3 {
 		float: right;
 		margin-right: 0px;
 	}
 }
+
+@media screen and (min-width: 500px) {
+	* {
+		font-size: 20px;
+	}
+} 
